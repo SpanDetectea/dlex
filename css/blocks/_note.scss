@@ -1,0 +1,43 @@
+.note {
+    background-color: #201f37;
+    width: 196px;
+    position: absolute;
+    border-radius: 12px;
+    top: 318px;
+    right: -95px;
+    &__title {
+        padding: 13px;
+        font-family: Gilroy;
+        font-weight: 700;
+        font-size: 8.29px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #7a7a7a;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 13px;
+        gap: 11px;
+        &__item {
+            list-style: none;
+            padding-left: 13px;
+            font-family: Gilroy;
+            font-weight: 700;
+            font-size: 8.29px;
+            line-height: 130%;
+            color: $white;
+            display: flex;
+            align-items: center;
+            & > img {
+                margin-right: 8px;
+            }
+            & > span {
+                color: #7a7a7a;
+            }
+            &:nth-child(2) {
+                color: rgb(244, 203, 122);
+            }
+        }
+    }
+}

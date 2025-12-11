@@ -1,0 +1,52 @@
+@import "mixins";
+.examples {
+    width: 1128px;
+    margin: calc(96px * 2) auto 0 auto;
+    &__title {
+        @include font(600, 14px, 170%, $indigo);
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    &__header {
+        @include font(700, 40px, 140%, $gray);
+        margin-bottom: 41px;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 120px;
+    }
+}
+.example {
+    position: relative;
+    width: 456px;
+    &__title {
+        @include font(700, 20px, 140%, $indigo);
+        margin-bottom: 12px;
+    }
+    &__description {
+        @include font(400, 16px, 180%, #1211278f);
+        margin-bottom: 32px;
+    }
+    &__image {
+        width: 456px;
+        height: 297px;
+        margin-bottom: 32px;
+    }
+    &__list {
+        @include font(400, 14px, 180%, $gray);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+        &__item {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        &__daw {
+            @include circle(20px);
+            background-color: #90ecf4;
+        }
+    }
+}

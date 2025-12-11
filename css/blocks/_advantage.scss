@@ -1,0 +1,18 @@
+@import "mixins";
+.advantage {
+    width: 1128px;
+    margin: 0 auto;
+    padding-top: 24px;
+    &__header {
+        max-width: 604px;
+        margin-bottom: 40px;
+    }
+    &__title {
+        @include font(600, 14px, 170%, $indigo);
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+    }
+    &__slogan {
+         @include font(700, 40px, 140%, $gray);
+    }
+}

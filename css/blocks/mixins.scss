@@ -1,0 +1,21 @@
+@import "../const";
+
+@mixin font($weight: 500, $size: 14px, $line: 24px, $color: $gray) {
+    font-family: Poppins, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+}
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin circle($size: 49px) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    @include center();
+}

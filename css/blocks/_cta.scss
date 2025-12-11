@@ -1,0 +1,34 @@
+@import "mixins";
+.cta {
+    background-color: $indigo;
+    &__wrapper {
+        width: 744px;
+        padding: 96px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @include font(700, 44px, 140%, $white);
+        margin-bottom: 20px;
+        padding: 0 41px;
+        text-align: center;
+    }
+    &__p {
+        @include font(400, 20px, 180%, #ffffff8f);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__button {
+        @include font(500, 16px, 150%, $indigo);
+        background-color: $white;
+        padding: 14px 32px;
+        border-radius: 8px;
+        &--offer {
+            color: $white;
+            background-color: $indigo;
+            max-height: 52px;
+        }
+    }
+}

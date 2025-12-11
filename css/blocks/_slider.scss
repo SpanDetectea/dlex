@@ -1,0 +1,41 @@
+@import "mixins";
+.slider {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__dots {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        &__dot {
+             @include circle(4px);
+             background-color: #32334c;
+            &--active {
+                width: 8px;
+                height: 8px;
+                background-color: #9d097c;
+            }
+
+            &__wrapper {
+                &--active {
+                    border: 1px solid #9d097c;
+                     @include circle(24px);
+                }
+            }
+        }
+    }
+    &__arrow {
+        background-color: #fff0f5;
+        @include circle(40px);
+        &--right {
+            transform: rotate(180deg);
+        }
+    }
+    &__pagination {
+        display: flex;
+        gap: 16px;
+        width: 172px;
+        margin: 40px auto 0 auto;
+    }
+}

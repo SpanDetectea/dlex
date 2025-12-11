@@ -1,0 +1,41 @@
+@import "mixins";
+
+.footer {
+    &__wrapper {
+        margin: 56px auto 71px auto;
+        width: 1128px;
+        display: flex;
+    }
+    &__copyright {
+        @include font(400, 16px, 180%, #1211278f);
+        text-align: center;
+        width: 1128px;
+        padding: 37px 0 40px 0;
+        margin: 0 auto;
+        border-top: 1px solid #1211271f;
+    }
+    &__description {
+        @include font(400, 14px, 180%, #1211278f);
+        margin: 24px 0;
+        width: 360px;
+    }
+    &__contacts {
+        max-width: 360px;
+        margin-right: 24px;
+    }
+    &__info {
+        width: 100%;
+        // display: flex;
+        // justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(192px, 1fr));
+        justify-self: start; 
+    }
+}
+.socialMedia {
+    display: flex;
+    gap: 32px;
+    &__item {
+        list-style-type: none;
+    }
+}

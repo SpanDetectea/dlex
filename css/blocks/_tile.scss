@@ -1,0 +1,23 @@
+@import "mixins";
+.tile {
+    width: 264px;
+    height: 322px;
+    box-shadow: 0px 20px 50px 0px #12112714;
+    @include center();
+    border-radius: 12px;
+    &__wrapper {
+        margin: 56px 24px;
+    }
+    &__logo {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+    }
+    &__title {
+        @include font(700, 16px, 140%, $gray);
+        margin-bottom: 16px;
+    }
+    &__description {
+        @include font(400, 14px, 180%, #1211278f);
+    }
+}

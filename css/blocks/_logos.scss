@@ -1,0 +1,28 @@
+@import "mixins";
+.logos {
+    display: flex;
+    position: relative;
+    height: 36px;
+    padding: 0 19px;
+    &__item {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 50%;
+        &-item1 {
+            top: 3px;
+        }
+        &-item2 {
+            left: calc(20px + 19px);
+        }
+        &-item3 {
+            left: calc(50px + 19px);
+        }
+        &-item4 {
+            top: 3px;
+            left: calc(80px + 19px);
+            background-color: #5cb6e9;
+            @include center();
+        }
+    }
+}

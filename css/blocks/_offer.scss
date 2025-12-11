@@ -1,0 +1,22 @@
+@import "mixins";
+.offer {
+    margin: calc(61px + 96px) auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1128px;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include font(700, 32px, 140%, $gray);
+        margin-bottom: 8px;
+        & > span {
+            color: $indigo;
+        }
+    }
+    &__p {
+        @include font(400, 18px, 180%, #1211278f);
+    }
+}
