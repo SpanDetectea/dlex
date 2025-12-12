@@ -1,41 +1,104 @@
 @import "mixins";
 
 .footer {
-    &__wrapper {
-        margin: 56px auto 71px auto;
-        width: 1128px;
-        display: flex;
+  &__wrapper {
+    margin: 56px auto 71px auto;
+    width: 1128px;
+    display: flex;
+    @media screen and (max-width: 1128px) {
+      width: 748px;
+      justify-content: center;
+      @media screen and (max-width: 768px) {
+        width: 405px;
+        justify-content: center;
+      }
     }
-    &__copyright {
-        @include font(400, 16px, 180%, #1211278f);
-        text-align: center;
-        width: 1128px;
-        padding: 37px 0 40px 0;
-        margin: 0 auto;
-        border-top: 1px solid #1211271f;
+  }
+  &__copyright {
+    @include font(400, 16px, 180%, #1211278f);
+    text-align: center;
+    width: 1128px;
+    padding: 37px 0 40px 0;
+    margin: 0 auto;
+    border-top: 1px solid #1211271f;
+    @media screen and (max-width: 1168px) {
+      width: 746px;
+      @media screen and (max-width: 768px) {
+        width: 405px;
+      }
     }
-    &__description {
-        @include font(400, 14px, 180%, #1211278f);
-        margin: 24px 0;
-        width: 360px;
+  }
+  &__description {
+    @include font(400, 14px, 180%, #1211278f);
+    margin: 24px 0;
+    width: 360px;
+    @media screen and (max-width: 768px) {
+      width: 250px;
     }
-    &__contacts {
-        max-width: 360px;
-        margin-right: 24px;
+  }
+  &__contacts {
+    max-width: 360px;
+    margin-right: 24px;
+  }
+  &__info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(192px, 1fr));
+    justify-self: start;
+    @media screen and (max-width: 1168px) {
+      display: flex;
+      flex-direction: column;
+      width: auto;
     }
-    &__info {
-        width: 100%;
-        // display: flex;
-        // justify-content: space-around;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(192px, 1fr));
-        justify-self: start; 
+  }
+  &__card {
+    @media screen and (max-width: 1168px) {
+      display: inline-block;
     }
+  }
 }
 .socialMedia {
-    display: flex;
-    gap: 32px;
-    &__item {
-        list-style-type: none;
+  display: flex;
+  gap: 32px;
+  &__item {
+    list-style-type: none;
+  }
+}
+.footer__card {
+  position: relative;
+
+  .arrow-footer {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .card__list {
+    overflow: hidden;
+    max-height: none;
+    transition: max-height 0.3s ease;
+
+    &.active {
+      max-height: 500px;
     }
+  }
+
+  @media screen and (max-width: 1168px) {
+    .arrow-footer {
+      display: block;
+      color: rgba(18, 17, 39, 0.4);
+    }
+
+    .card__list {
+      max-height: 0;
+    }
+  }
+}
+
+.arrow-footer.open {
+  transform: rotate(90deg);
 }

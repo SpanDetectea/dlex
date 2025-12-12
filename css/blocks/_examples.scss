@@ -2,24 +2,49 @@
 .examples {
     width: 1128px;
     margin: calc(96px * 2) auto 0 auto;
+    @media screen and (max-width: 1128px) {
+        width: 748px;
+        @media screen and (max-width: 768px) {
+            width: 405px;
+        }
+    }
     &__title {
         @include font(600, 14px, 170%, $indigo);
         letter-spacing: 0.8px;
         text-transform: uppercase;
         margin-bottom: 12px;
+        @media screen and (max-width: 1128px) {
+            margin-left: 10px;
+        }
     }
     &__header {
         @include font(700, 40px, 140%, $gray);
         margin-bottom: 41px;
+        @media screen and (max-width: 1128px) {
+            margin-left: 10px;
+        }
     }
     &__wrapper {
         display: flex;
         gap: 120px;
+        @media screen and (max-width: 1128px) {
+            // margin-left: 10px;
+            width: 746px;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                width: 405px;
+            }
+        }
     }
 }
 .example {
     position: relative;
     width: 456px;
+    @media screen and (max-width: 768px) {
+        width: 405px;
+        overflow: hidden;
+    }
     &__title {
         @include font(700, 20px, 140%, $indigo);
         margin-bottom: 12px;
@@ -32,6 +57,9 @@
         width: 456px;
         height: 297px;
         margin-bottom: 32px;
+        @media screen and (max-width: 768px) {
+            width: 405px;
+        }
     }
     &__list {
         @include font(400, 14px, 180%, $gray);
@@ -39,6 +67,10 @@
         flex-direction: column;
         gap: 8px;
         list-style: none;
+        @media screen and (max-width: 768px) {
+            width: 405px;
+            margin: 0 auto;
+        }
         &__item {
             display: flex;
             gap: 12px;

@@ -8,6 +8,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (max-width: 768px) {
+            width: 405px;
+        }
     }
     &__title {
         @include font(700, 44px, 140%, $white);
@@ -25,10 +28,16 @@
         background-color: $white;
         padding: 14px 32px;
         border-radius: 8px;
+        cursor: pointer;
         &--offer {
             color: $white;
             background-color: $indigo;
             max-height: 52px;
+        }
+        @media screen and (max-width: 1128px) {
+            margin-top: 10px;
+            float: right;
+            align-self: flex-end;
         }
     }
 }
