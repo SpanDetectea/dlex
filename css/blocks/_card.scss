@@ -6,11 +6,22 @@
     align-items: center;
     top: 210px;
     left: -47px;
+    @media screen and (max-width: 768px) {
+        top: 250px;
+        left: 100px;
+        @media screen and (max-width: 550px) {
+            padding: 0;
+            display: none;
+        }
+    }
     &-second {
         top: 0;
         left: 0;
         position: relative;
         padding: 21px 22px;
+        @media screen and (max-width: 550px) {
+            padding: 0;
+        }
     }
     &__present {
         width: 49px;
@@ -41,7 +52,6 @@
         border-radius: 50%;
         align-content: center;
         margin-right: 12px;
-        // @include card;
         width: 42px;
         height: 42px;
         background-color: #ffbb24;

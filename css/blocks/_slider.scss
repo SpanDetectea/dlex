@@ -3,9 +3,10 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        
+
         @media screen and (max-width: 768px) {
             flex: 1 0 50%;
+            justify-content: space-evenly;
         }
     }
     &__dots {

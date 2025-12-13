@@ -41,6 +41,9 @@
     flex-direction: column;
     align-items: center;
     max-height: 657px;
+    @media screen and (max-width: 768px) {
+        // width: 405px;
+    }
     &__logo {
         margin-top: 136px;
     }
