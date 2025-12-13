@@ -20,6 +20,9 @@
         @media screen and (max-width: 768px) {
             width: 405px;
             height: auto;
+            @media screen and (max-width: 420px) {
+                width: 355px;
+            }
         }
     }
     &__diagram {

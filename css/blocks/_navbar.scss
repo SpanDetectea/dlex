@@ -8,6 +8,9 @@
         width: 768px;
         @media screen and (max-width: 768px) {
             width: 405px;
+            @media screen and (max-width: 420px) {
+                width: 355px;
+            }
         }
     }
     &__logo {
@@ -51,7 +54,9 @@
         align-items: center;
         @media screen and (max-width: 768px) {
             width: 405px;
-            // align-items: flex-start;
+            @media screen and (max-width: 420px) {
+                width: 355px;
+            }
         }
     }
 }
@@ -61,6 +66,11 @@
     border-radius: 6px;
     @include font(500, 14px, 24px, $grayOpacity);
     cursor: pointer;
+    @media screen and (max-width: 420px) {
+         width: 70px;
+    height: 30px;
+    }
+
     &--up {
         background-color: $indigo;
         color: $white;

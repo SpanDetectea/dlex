@@ -7,6 +7,10 @@
         width: calc(768px - 20px);
         @media screen and (max-width: 768px) {
             width: 405px;
+                @media screen and (max-width: 420px) {
+        width: 355px;
+    }
+
         }
     }
     &__header {

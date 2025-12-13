@@ -1,5 +1,8 @@
 @import "mixins";
 .slider {
+    @media screen and (max-width: 420px) {
+        width: 355px;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -14,6 +17,7 @@
         gap: 8px;
         align-items: center;
         &__dot {
+            cursor: pointer;
             @include circle(4px);
             background-color: #32334c;
             &--active {
@@ -47,6 +51,9 @@
             width: 405px;
             justify-content: center;
             gap: 40px;
+            @media screen and (max-width: 420px) {
+                width: 355px;
+            }
         }
     }
 }

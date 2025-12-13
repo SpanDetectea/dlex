@@ -13,8 +13,11 @@
         align-items: flex-start;
         grid-area: 10px;
         @media screen and (max-width: 768px) {
-        width: 405px;
-      }
+            width: 405px;
+            @media screen and (max-width: 420px) {
+                width: 355px;
+            }
+        }
     }
     &__wrapper {
         display: flex;
@@ -37,6 +40,9 @@
             width: 400px;
             @media screen and (max-width: 768px) {
                 margin: 50px 0 20px 0;
+                @media screen and (max-width: 420px) {
+                    width: 355px;
+                }
             }
         }
         & > span {

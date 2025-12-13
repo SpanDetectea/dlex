@@ -11,6 +11,10 @@
       @media screen and (max-width: 768px) {
         width: 405px;
         justify-content: center;
+        @media screen and (max-width: 420px) {
+          width: 355px;
+          justify-content: center;
+        }
       }
     }
   }
@@ -25,6 +29,9 @@
       width: 746px;
       @media screen and (max-width: 768px) {
         width: 405px;
+        @media screen and (max-width: 420px) {
+          width: 355px;
+        }
       }
     }
   }
@@ -34,6 +41,10 @@
     width: 360px;
     @media screen and (max-width: 768px) {
       width: 250px;
+      @media screen and (max-width: 420px) {
+        width: 200px;
+        // justify-content: center;
+      }
     }
   }
   &__contacts {

@@ -6,6 +6,10 @@
         width: 748px;
         @media screen and (max-width: 768px) {
             width: 405px;
+                            @media screen and (max-width: 420px) {
+                    width: 355px;
+                }
+
         }
     }
     &__title {
@@ -28,12 +32,14 @@
         display: flex;
         gap: 120px;
         @media screen and (max-width: 1128px) {
-            // margin-left: 10px;
             width: 746px;
             flex-direction: column;
             align-items: center;
             @media screen and (max-width: 768px) {
                 width: 405px;
+                @media screen and (max-width: 420px) {
+                    width: 355px;
+                }
             }
         }
     }
@@ -44,6 +50,9 @@
     @media screen and (max-width: 768px) {
         width: 405px;
         overflow: hidden;
+        @media screen and (max-width: 420px) {
+            width: 355px;
+        }
     }
     &__title {
         @include font(700, 20px, 140%, $indigo);

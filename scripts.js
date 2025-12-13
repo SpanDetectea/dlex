@@ -67,6 +67,9 @@ window.addEventListener('resize', () => {
     } else if (width >= 1024) {
         countTile = 4
         index = 0
+    } else if (width < 420) {
+        countTile = 1
+        index = 0
     }
     showSlide(index);
 });
