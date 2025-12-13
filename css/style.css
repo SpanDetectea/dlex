@@ -897,6 +897,11 @@
     width: 150px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 420px) {
+  .note {
+    display: none;
+  }
+}
 .note__title {
   padding: 13px;
   font-family: Gilroy;

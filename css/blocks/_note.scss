@@ -10,6 +10,9 @@
         top: 336px;
         right: -25px;
         width: 150px;
+        @media screen and (max-width: 420px) {
+            display:none;
+        }
     }
     &__title {
         padding: 13px;
